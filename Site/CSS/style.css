@@ -1,0 +1,478 @@
+body {
+	font-family: 'Arial', sans-serif;
+    background-color: #FFEBCD;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+}
+
+#accueil {
+    display: flex;
+    flex-direction: column;
+    padding: 10%;
+}
+
+.header{
+    position: fixed;
+}
+
+section h1 {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:90%;
+    max-width:800px;
+    margin: auto;
+
+    text-transform:uppercase;
+    font-size:2.8em;
+    font-weight:700;
+}
+
+ul {
+    margin: 0;
+    padding: 0 ;
+    text-align: center;
+    list-style: none;
+}
+
+table {
+    position: relative;
+    width: 600px;
+    background-color: #FFEBCD;
+    margin-left: auto;
+    margin-right: auto;
+    top: 140px;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 100px;
+}
+
+tr {
+    width: 600px;
+}
+
+td {
+    width: 300px;
+    align: top;
+    border: none;
+    padding: 0;
+}
+
+span {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    color: #333;
+}
+
+.left {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.right {
+    text-align: left;
+    border-left: 1px solid #cccccc;
+    padding-left: 20px;
+}
+
+h1{
+    font-family: 'ALGERIAN', sans-serif;
+}
+
+h2,
+h3,
+p,
+section,
+a {
+    color: #40280E;
+    text-align: center;
+    font-family: 'Arial';
+}
+
+a {
+    text-decoration: none;
+}
+
+.Accueil {
+    margin: 0;
+    font-size: 1.45em;
+}
+
+.main-nav {
+    margin-top: 5px;
+}
+
+.Accueil a,
+.main-nav a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+}
+
+.main-nav a {
+    color: #40280E;
+    font-size: .99em;
+}
+
+.main-nav a:hover {
+    color: #fcfcfc;
+}
+
+.header {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    border: 1px solid #a2a2a2;
+    background-color: #D4B191;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: fixed;
+    position: sticky;
+}
+
+@media (min-width: 769px) {
+    .header,
+    .main-nav {
+        display: flex;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        .header{
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1150px;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* Styles pour les onglets */
+
+#lui{
+    padding: 10%;
+}
+
+#lui input[type="radio"] {
+    display: none;
+    text-align: center;
+}
+
+#lui label {
+    padding: 10px;
+    background-color: #D4B191;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#lui label:hover {
+    background-color: #C09A68;
+}
+
+.tab-content {
+    display: none;
+}
+
+/* Affiche le contenu de l'onglet sélectionné */
+#onglet-biographie:checked ~ #biographie,
+#onglet-langues:checked ~ #langues,
+#onglet-passions:checked ~ #passions {
+    display: block;
+}
+
+#competences{
+    padding: 10%;
+}
+
+#portfolio{
+    padding: 10%;
+}
+
+
+.box1{
+    background-color: #D4B191;
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+}
+
+
+/*
+-------------------------------
+Ticket Details Page
+-------------------------------
+*/
+
+.ticket-details-page {
+    margin: 100px 0px;
+  }
+  
+  .ticket-details-page img {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .ticket-details-page .right-content {
+    margin-left: 15px;
+  }
+  
+  .ticket-details-page .right-content h4 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #fff;
+  }
+  
+  .ticket-details-page .right-content span {
+    font-size: 14px;
+    font-weight: 700;
+    color: #656c74;
+    display: inline-block;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    padding-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .ticket-details-page .right-content ul {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .ticket-details-page .right-content ul li {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+  
+  .ticket-details-page .right-content ul li i {
+    color: #7c838b;
+    margin-right: 10px;
+    width: 15px;
+    height: 25px;
+    float: left;
+  }
+  
+  .ticket-details-page .right-content .quantity-content {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .ticket-details-page .right-content .quantity-content .left-content {
+    float: left;
+    margin-right: 30px;
+  }
+  
+  .ticket-details-page .right-content .quantity-content .right-content {
+    text-align: right;
+  }
+  
+  .ticket-details-page .right-content .quantity-content .left-content h6 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .ticket-details-page .right-content .total h4 {
+    float: left;
+    font-size: 20px;
+    margin-top: 8px;
+  }
+  
+  .ticket-details-page .right-content .total .main-dark-button {
+    text-align: right;
+  }
+  .ticket-details-page .right-content .warn p {
+    margin-top: 45px;
+  }
+  
+  
+  .quantity {
+    display: inline-block; }
+   
+   .quantity .input-text.qty {
+    width: 35px;
+    height: 39px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #efefef;
+   }
+   
+   .quantity.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top; }
+   
+   .quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+   }
+   
+   .quantity.buttons_added .minus,
+   .quantity.buttons_added .plus {
+    padding: 7px 10px 8px;
+    height: 39px;
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    cursor:pointer;}
+   
+   .quantity.buttons_added .minus {
+    border-right: 0; }
+   
+   .quantity.buttons_added .plus {
+    border-left: 0; }
+   
+   .quantity.buttons_added .minus:hover,
+   .quantity.buttons_added .plus:hover {
+    background: #eeeeee; }
+   
+   .quantity input::-webkit-outer-spin-button,
+   .quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; }
+    
+    .quantity.buttons_added .minus:focus,
+   .quantity.buttons_added .plus:focus {
+    outline: none; }
+  
+  
+  
+  #features {
+    margin-bottom: 80px;
+  }
+  
+  .feature-item {
+    display: inline-block;
+    margin-bottom: 60px;
+  }
+  
+  .feature-item .left-icon img {
+    float: left;
+    margin-right: 30px;
+  }
+  
+  .feature-item .right-content {
+    display: inline;
+  }
+  
+  .feature-item .right-content h4 {
+    margin-top: 0px;
+    margin-bottom:  7px;
+    letter-spacing: 0.25px;
+    color: #232d39;
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  
+  .feature-item .right-content a.text-button {
+    margin-top: 7px;
+    display: inline-block;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #656c74;
+    font-weight: 500;
+  }
+  
+
+/* Nouveau style pour les blocs de projet */
+.hover.panel {
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.hover.panel .front {
+    background-color: #D4B191;
+    color: #40280E;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.hover.panel:hover .front {
+    top: 100%;
+}
+
+.hover.panel:hover .back {
+    top: 0;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    max-width: 840px;
+}
+
+.send-button {
+    margin-top: 15px;
+    height: 34px;
+    width: 400px;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+}
+
+.social-media-list {
+    position: relative;
+    font-size: 22px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.social-media-list li a {
+    color: #8f4444;
+}
+
+.social-media-list li:hover {
+    background-color: #40280E; 
+}
+
+.social-media-list li:hover:after {
+    opacity: 1;  
+    transform: scale(1.12);
+    transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+    color: #fff;
+}
+
+#button{
+    background-color: #FFEBCD;
+}
+
